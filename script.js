@@ -43,6 +43,9 @@ var updateTheme = function(){
     }
 }
 
+
+let timeStart = false;
+
 // Function to increase the timer
 let increase = function(){
     // This i will take care of the timer controller
@@ -71,12 +74,16 @@ var id;
 
 // This function is used to start the timer
 let updateTime = function(){
-    id = setInterval(increase, 1000);
+    if(!timeStart){
+        id = setInterval(increase, 1000);
+        timeStart = true;
+    }
 }
 
 // This function is used to stop the timer 
 let stopTime = function(){
     clearInterval(id);
+    timeStart = false;
 }
 
 // This function is used to reset the timer 
