@@ -1,6 +1,8 @@
 /* Styling to the body part with gray background */
 body{
+    /* background-image: url('images/img3.jpg'); */
     background-color: gray;
+    background-size: cover;
     font-family: sans-serif;
     text-align: center;
 }
@@ -11,7 +13,8 @@ body{
     border-radius: 20px;
     color: black;
     width: 65%;
-    margin: 10px auto;
+    margin:auto;
+    
 }
 
 

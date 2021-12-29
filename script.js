@@ -25,7 +25,9 @@ let timer = document.getElementById('timer');
 // Two theme light and dark background is available
 var updateTheme = function(){
     if(main.style.color == 'black'){
+        // changing to dark mode
         main.style.color = "white";
+        // counter is used to change all the timer controller
         for(let i of counter){
             i.style.color = "orange";
         }
@@ -33,8 +35,10 @@ var updateTheme = function(){
         theme.innerHTML = "Light mode";
         main.style.backgroundColor = "#080832";
     }else{
+        // changing to light mode
         main.style.color = "black";
         main.style.backgroundColor = "white";
+        // counter is used to change all the timer controller
         for(let i of counter){
             i.style.color = "black";
         }
